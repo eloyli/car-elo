@@ -1,0 +1,9 @@
+package mph.trunksku.apps.myssh.util;
+
+public class Constraints
+{
+	public String appname = "GRETONGERS PRO™";
+	public String packagen = "com.masfha.id";
+	public String confpass = "magicphinnovation";
+	public String defconf = "kDCXOMmboZGMF3dsuxbQsdi0kxRl4BKNziE+V8RBx39LOhiFXuZjih5QQCyGcxj2hfR/i4SbPnBpppYIKdflBe/cG+SMxYp1zXFs3wO1DRkpdA08Pb20Xn3hqqfect2ZhNgnNQzKhBPiLKVYBI0ZBYILbsYkbSc1npatHkxoBhEAKu6YJ2C3ffgszzkOLY4cVAKNvqrq7d9ytKBEDAVw9VBLNWhLBdkBQoJlVDD6HoUQGZ5vz6mEz83THLNlE9jM3uims2YS7tDp/8QgBDi48YgMt/+5sdv61ctJ0zML3Gx5t6dX2K1g6ECBQ0u2a7DUGRXI9IksrSKO+hpfB4+/gHVKNcNfK9AwJb/LtrR5PHQzZjngzOki8h4QfuuN3FYZEZy3QVN7qyW2RQL92glZU77qNEVkRvsXNrNad/8AkOi+/DV1/G1gwdiriASCsnyOPLkskKVvCiCyVl+iI/tVeToxf/aqpEYTyNEG3Yo0Pb7GsAjOylE5d8LKycUuq1GzCrC/3A2dK7Ywg6nINSxAFwpM6JPYoK7P82zaDEHm01dSebl6H5A/vwaWuJRNCgfxoo4Uq4OMmVTB1U5RCNEMVQ==";
+}

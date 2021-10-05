@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:paddingLeft="?dialogPreferredPadding"
+		android:paddingRight="?dialogPreferredPadding"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10.0dip">
+<android.support.design.widget.TextInputLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<EditText
+					android:id="@+id/edUser"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Username"
+					android:maxLines="1"
+					android:imeOptions="actionUnspecified|normal"/>
+
+			</android.support.design.widget.TextInputLayout>
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<mph.trunksku.apps.myssh.view.MaterialEditText
+					xmlns:app="http://schemas.android.com/apk/res-auto"
+					android:id="@+id/edPassword"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:hint="Password"
+					android:maxLines="1"
+					app:tint_color="?colorPrimary"
+					android:inputType="textPassword"
+					android:imeOptions="actionUnspecified|normal"/>
+
+			</android.support.design.widget.TextInputLayout>
+
+			
+
+		</LinearLayout>
+
+		<TextView
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5.0dip"
+			android:text="Don't have an account? Buy our Private Account"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

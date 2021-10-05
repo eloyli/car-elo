@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:icon="@drawable/ic_box_download" android:id="@+id/update" android:title="Update" />
+	<item android:icon="@drawable/ic_clipboard_text" android:id="@+id/vpn_mode" android:title="VPN Mode" />
+	<item android:icon="@drawable/ic_account" android:id="@+id/changelog" android:title="Changelog's" />
+	<group android:id="@+id/group_settings_id">
+		<item android:icon="@drawable/ic_cog" android:id="@+id/setting" android:title="Settings" />
+		<item android:icon="@drawable/ic_facebook" android:id="@+id/support" android:title="Contact Support" />
+		<item android:icon="@drawable/ic_information_outline" android:id="@+id/about" android:title="About" />
+		<item android:icon="@drawable/ic_exit_to_app" android:id="@+id/exit" android:title="Exit" />
+	</group>
+</menu>
+

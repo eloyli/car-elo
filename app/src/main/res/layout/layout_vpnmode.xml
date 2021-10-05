@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.CardView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10.0dip"
+		card_view:cardCornerRadius="2.0dip">
+
+		<RelativeLayout
+			android:padding="10.0dip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:textStyle="bold"
+				android:id="@+id/q_"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Tunnel Type"
+				android:maxLines="1"/>
+
+			<RelativeLayout
+				android:orientation="horizontal"
+				android:id="@+id/q9"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/q_">
+
+				<RadioGroup
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/vpn_mode_tunnel">
+
+					<RadioButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Secure Shell"
+						android:layout_weight="1.0"
+						android:id="@+id/ssh"/>
+
+					<RadioButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Open VPN"
+						android:layout_weight="1.0"
+						android:id="@+id/ovpn"/>
+
+				</RadioGroup>
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</android.support.v7.widget.CardView>
+
+	<android.support.v7.widget.CardView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10.0dip"
+		card_view:cardCornerRadius="2.0dip">
+
+		<RelativeLayout
+			android:padding="10.0dip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:textStyle="bold"
+				android:id="@+id/q_"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Connect From"
+				android:maxLines="1"/>
+
+			<RelativeLayout
+				android:orientation="horizontal"
+				android:id="@+id/q9"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/q_">
+
+				<mph.trunksku.apps.myssh.view.MRadioGroup
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:id="@+id/mode_group">
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="HTTP"
+							android:id="@+id/mode_1"
+							android:layout_weight="1.0"/>
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:layout_weight="1.0"
+							android:text="SSL"
+							android:id="@+id/mode_2"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<RadioButton
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="DIRECT"
+							android:id="@+id/mode_3"/>
+
+					</LinearLayout>
+
+				</mph.trunksku.apps.myssh.view.MRadioGroup>
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</android.support.v7.widget.CardView>
+
+</LinearLayout>
+

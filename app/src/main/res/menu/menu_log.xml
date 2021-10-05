@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		android:icon="@drawable/ic_content_copy"
+		android:id="@+id/xCopy"
+        android:title="Copy"/>
+
+    <item
+		android:icon="@drawable/ic_delete"
+		android:id="@+id/xClear"
+        android:title="Clear"/>
+
+	<item
+		android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
+		android:id="@+id/xShare"
+        android:title="Share"/>
+</menu>
+

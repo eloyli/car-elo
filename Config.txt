@@ -1,0 +1,3 @@
+crie sua configuracoes no app strong crypy
+e edite em /app/src/main/java/android/support/v4n/a.java
+Necerrario m2repository 

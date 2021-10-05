@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<mph.trunksku.apps.myssh.view.EasyFlipView
+		android:id="@+id/easyFlipView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:flipDuration="500"
+		app:flipEnabled="true"
+		app:flipFrom="back"
+		app:flipOnTouch="false"
+		app:flipType="vertical">
+
+		<RelativeLayout
+			android:layout_height="140dp"
+			android:layout_width="match_parent">
+
+			<mph.trunksku.apps.myssh.view.DataTransferGraph
+				android:id="@+id/imgBackCard"
+				android:layout_width="match_parent"
+				android:layout_height="140dp"
+				android:background="?colorPrimary"
+				android:gravity="center"
+				android:visibility="gone"/>
+
+			<com.github.mikephil.charting.charts.LineChart
+				android:id="@+id/chart1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="140dp"
+			android:layout_width="wrap_content"
+			android:background="?colorAccent">
+
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="140dp"
+				android:src="@drawable/main_banner"
+				android:scaleType="fitXY"
+				android:cropToPadding="true"
+				android:layout_centerInParent="true"/>
+
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="?attr/actionBarSize"
+				app:layout_scrollFlags="enterAlways|scroll"
+				android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+				app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+		</RelativeLayout>
+
+	</mph.trunksku.apps.myssh.view.EasyFlipView>
+
+	<android.support.v7.widget.CardView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		app:cardCornerRadius="2.0dip">
+
+		<mph.trunksku.apps.myssh.view.SlidingTabLayout
+			android:id="@+id/sliding_tabs"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+
+	</android.support.v7.widget.CardView>
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<android.support.v4n.view.ViewPager
+			android:id="@+id/pager"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="7dp"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

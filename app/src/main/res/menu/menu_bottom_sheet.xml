@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+		android:id="@+id/changelog"
+        android:icon="@drawable/ic_newspaper"
+        android:title="ChangeLog" />
+    <item
+		android:id="@+id/contact"
+        android:icon="@drawable/ic_facebook"
+        android:title="Support" />
+	<item
+		android:id="@+id/about"
+        android:icon="@drawable/ic_information_outline"
+        android:title="About" />
+	<item
+		android:id="@+id/exitme"
+        android:icon="@drawable/ic_cog"
+        android:title="Setting" />
+</menu>

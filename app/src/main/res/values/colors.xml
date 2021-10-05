@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2012-2016 Arne Schwabe
+  ~ Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
+  -->
+
+<resources>
+    <!-- Indigo -->
+    <!-- OpenVPN colours #203155, #C66D0D -->
+	<color name="colorPrimary">#006064</color>      <!--500-->
+    <color name="colorPrimaryDark">#006064</color> <!--700-->
+    <color name="colorAccent">#006064</color>             <!-- Orange 400 -->
+	<color name="colorAcentDark">#006064</color>
+	
+	<!-- Orange 400 -->
+    <color name="gelb">#ffff00</color>
+    <color name="rot">#006064</color>
+	<color name="blue_pressed">@color/colorAccent</color>
+    <color name="blue_normal">@color/colorPrimary</color>
+       <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#FFFFFF</color>
+    <color name="colorHeader">@color/colorPrimary</color>
+
+    <color name="switchbar">@android:color/darker_gray</color>
+  <!-- General -->
+    <color name="about_item_icon_color">#313131</color>
+    <color name="about_background_color">#FFFFFF</color>
+    <color name="about_separator_color">#e1e1e1</color>
+
+    <!-- Social -->
+    <color name="about_facebook_color">#3b5998</color>
+    <color name="about_twitter_color">#55acee</color>
+    <color name="about_instagram_color">#3f729b</color>
+    <color name="about_play_store_color">#689F38</color>
+    <color name="about_youtube_color">#cd201f</color>
+    <color name="about_github_color">#333333</color>
+
+
+    <!-- Text -->
+    <color name="about_description_text_color">#595959</color>
+    <color name="about_item_text_color">#7c7c7c</color>
+    <color name="about_text_color">#595959</color>
+
+
+    <color name="background_tab_pressed">#1AFFFFFF</color>
+  <color name="space_background_color">#757575</color>
+    <color name="space_transparent">#00000000</color>
+    <color name="space_white">#ffffff</color>
+    <color name="space_default_color">#2A3137</color>
+    <color name="centre_button_color">#4285F4</color>
+    <color name="default_inactive_item_color">#9e9e9e</color>
+    <color name="default_active_item_color">#262626</color>
+    <color name="selected_item_color">#3fffffff</color>
+    <color name="badge_background_color">#006064</color>
+    <color name="white_with_alpha">#bfffffff</color>
+    <color name="colorBackgroundHighlightWhite">#8dffffff</color>
+ <color name="colorSheetText">#ffffff</color>
+    <color name="colorSheetTitle">#ffffff</color>
+    <color name="colorSheetDivider">#3f717171</color>
+</resources>

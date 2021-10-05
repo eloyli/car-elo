@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="SplashTheme" parent="@style/AppTheme">
+		<item name="android:windowBackground">@drawable/background_splash</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		</style>
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+		<item name="drawerArrowStyle">@style/DrawerIcon</item>
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorButtonNormal">?colorPrimary</item>
+	</style>
+	<style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/colorPrimary</item>
+    </style>
+	<style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+		<item name="android:textColor">#ffffff</item></style>
+	<style name="AppCompatAlertDialogStyle" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+		<item name="android:textColorPrimary">#ffffff</item>
+		<item name="android:background">@color/colorPrimary</item>
+		<item name="colorAccent">@color/colorAccent</item></style>
+		
+	<style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+		<item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorButtonNormal">?colorPrimary</item>
+    </style>
+	<style name="Widget.App.Spinner" parent="@style/Widget.AppCompat.Spinner">
+	
+	<item name="overlapAnchor">true</item></style>
+	<declare-styleable name="MaterialButton">
+        <attr name="dmb_colorPressed" format="color" />
+        <attr name="dmb_colorNormal" format="color" />
+        <attr name="dmb_cornerRadius" format="dimension" />
+    </declare-styleable>
+	<declare-styleable name="easy_flip_view">
+        <attr name="flipOnTouch" format="boolean"/>
+        <attr name="flipDuration" format="integer"/>
+        <attr name="flipType" format="string"/>
+        <attr name="flipFrom" format="string"/>
+        <attr name="flipEnabled" format="boolean"/>
+        <attr name="animFlipInId" format="reference"/>
+        <attr name="animFlipOutId" format="reference"/>
+    </declare-styleable>
+	<style name="Theme.Snapper" parent="@style/Theme.AppCompat.Light">
+    <item name="actionBarStyle">@style/ActionBar.Solid.Snapper</item>
+    </style>
+
+
+
+<style name="ActionBar.Solid.Snapper" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+     <item name="android:titleTextStyle">@style/ActionBar.Solid.Snapper.TitleTextStyle</item>
+
+</style>
+
+<style name="ActionBar.Solid.Snapper.TitleTextStyle"
+       parent ="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#000000</item>
+
+</style>
+ <style name="PopTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/PopTheme1</item>
+    </style>
+
+    <style name="PopTheme1">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="SideTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/SideTheme1</item>
+    </style>
+
+    <style name="SideTheme1">
+        <item name="android:windowEnterAnimation">@anim/side_in</item>
+        <item name="android:windowExitAnimation">@anim/side_out</item>
+    </style>
+
+    <style name="SlideTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/SlideTheme1</item>
+    </style>
+
+    <style name="SlideTheme1">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+	
+	<style name="FadeTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/FadeTheme1</item>
+    </style>
+
+    <style name="FadeTheme1">
+        <item name="android:windowEnterAnimation">@anim/abc_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/abc_fade_out</item>
+    </style>
+<style name="about_About" />
+
+    <style name="about_About.wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/about_background_color</item>
+    </style>
+
+    <style name="about_sub_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="about_image">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="about_description" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/about_page_description</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textColor">@color/about_description_text_color</item>
+        <item name="android:textSize">@dimen/about_description_text_size</item>
+    </style>
+
+    <style name="about_separator">
+        <item name="android:layout_height">@dimen/about_separator_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/about_separator_color</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="about_elementTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/about_text_color</item>
+        <item name="android:textSize">@dimen/about_item_text_size</item>
+    </style>
+
+    <style name="about_groupTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/about_item_text_color</item>
+        <item name="android:textSize">@dimen/about_group_item_text_size</item>
+    </style>
+      <style name="BottomSheetBuilder.DialogStyle" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetBuilder.BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetBuilder.BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/white</item>
+        <item name="behavior_hideable">true</item>
+        <item name="behavior_skipCollapsed">true</item>
+    </style>
+</resources>

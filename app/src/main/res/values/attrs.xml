@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsDividerWidth" format="dimension" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsPaddingMiddle" format="boolean" />
+        <attr name="pstsTextStyle">
+            <flag name="normal" value="0x0" />
+            <flag name="bold" value="0x1" />
+            <flag name="italic" value="0x2" />
+        </attr>
+        <attr name="pstsTextSelectedStyle">
+            <flag name="normal" value="0x0" />
+            <flag name="bold" value="0x1" />
+            <flag name="italic" value="0x2" />
+        </attr>
+        <attr name="pstsTextAlpha" format="float" />
+        <attr name="pstsTextSelectedAlpha" format="float" />
+    </declare-styleable>
+   <declare-styleable name="ShowHidePasswordEditText">
+        <attr name="drawable_hide" format="integer"/>
+        <attr name="drawable_show" format="integer"/>
+        <attr name="tint_color" format="color"/>
+        <attr name="additionalTouchTargetSize" format="dimension"/>
+    </declare-styleable>
+   <declare-styleable name="SpaceNavigationView">
+        <attr name="space_item_icon_size" format="dimension" />
+        <attr name="space_item_icon_only_size" format="dimension" />
+        <attr name="space_item_text_size" format="dimension" />
+        <attr name="space_background_color" format="color" />
+        <attr name="centre_button_color" format="color" />
+        <attr name="active_item_color" format="color" />
+        <attr name="inactive_item_color" format="color" />
+        <attr name="centre_button_icon" format="reference" />
+        <attr name="active_centre_button_icon_color" format="color" />
+        <attr name="inactive_centre_button_icon_color" format="color" />
+        <attr name="active_centre_button_background_color" format="color"/>
+        <attr name="centre_part_linear" format="boolean" />
+    </declare-styleable>
+      <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension"/>
+        <attr name="sb_shadow_offset" format="reference|dimension"/>
+        <attr name="sb_shadow_color" format="reference|color"/>
+        <attr name="sb_uncheck_color" format="reference|color"/>
+        <attr name="sb_checked_color" format="reference|color"/>
+
+        <attr name="sb_border_width" format="reference|dimension"/>
+        <attr name="sb_checkline_color" format="reference|color"/>
+        <attr name="sb_checkline_width" format="reference|dimension"/>
+        <attr name="sb_uncheckcircle_color" format="reference|color"/>
+        <attr name="sb_uncheckcircle_width" format="reference|dimension"/>
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension"/>
+
+        <attr name="sb_checked" format="reference|boolean"/>
+        <attr name="sb_shadow_effect" format="reference|boolean"/>
+        <attr name="sb_effect_duration" format="reference|integer"/>
+        <attr name="sb_button_color" format="reference|color"/>
+        <attr name="sb_show_indicator" format="reference|boolean"/>
+        <attr name="sb_background" format="reference|color"/>
+        <attr name="sb_enable_effect" format="reference|boolean"/>
+    </declare-styleable>
+       <attr name="bottomSheetBuilderBackgroundColor" format="color" />
+    <attr name="bottomSheetBuilderItemTextColor" format="color" />
+    <attr name="bottomSheetBuilderTitleTextColor" format="color" />
+    <declare-styleable name="FilePickerPreference">
+        <attr name="selection_mode" format="enum">
+            <enum name="single_mode" value="0"/>
+            <enum name="multi_mode" value="1"/>
+        </attr>
+        <attr name="selection_type" format="enum">
+            <enum name="file_select" value="0"/>
+            <enum name="dir_select" value="1"/>
+            <enum name="file_dir_select" value="2"/>
+        </attr>
+
+        <attr
+            name="root_dir"
+            format="string"/>
+
+        <attr
+            name="error_dir"
+            format="string"/>
+
+        <attr
+            name="offset_dir"
+            format="string"/>
+
+        <attr
+            name="extensions"
+            format="string"/>
+
+        <attr
+            name="title_text"
+            format="string"/>
+
+    </declare-styleable>
+	<declare-styleable name="DataGraph">
+        <attr name="dg_colorDown" format="color" />
+        <attr name="dg_colorUp" format="color" />
+        <attr name="dg_colorText" format="color" />
+    </declare-styleable>
+</resources>

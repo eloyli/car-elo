@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="?colorPrimary">
+
+	<FrameLayout
+		android:id="@+id/bottom_sheet"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#ff0000"
+		app:behavior_peekHeight="50dp"
+        app:elevation="4dp"
+        app:behavior_hideable="true"
+		app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Test"/>
+
+	</FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

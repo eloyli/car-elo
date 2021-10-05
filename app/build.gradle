@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.0"
+
+    defaultConfig {
+        applicationId "com.lalito.xyz"
+        //multiDexEnabled true
+		minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 10
+        versionName "1.0.0"
+       vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+dependencies {
+
+	compile 'com.github.yadav-rahul:tastytoast:v0.1.1'
+	compile 'com.android.support:cardview-v7:+'
+	compile 'com.android.support:appcompat-v7:27.+'
+	compile 'com.android.support:design:+'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.google.firebase:firebase-ads:9.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/transparent">
+
+	<android.support.v7.widget.CardView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		app:cardCornerRadius="0dp"
+		app:cardElevation="16dp"
+		app:cardUseCompatPadding="true"
+		app:cardBackgroundColor="@android:color/white">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/relativelayout1">
+				<LinearLayout 
+					android:gravity="center" 
+					android:orientation="vertical" 
+					android:id="@+id/background"
+					android:background="?colorPrimary" 
+					android:layout_width="fill_parent" 
+					android:layout_height="100.0dip">
+					<ImageView 
+						android:id="@+id/icon"
+						android:layout_width="48.0dip" 
+						android:layout_height="48.0dip" 
+						android:src="@drawable/ic_map_marker_circle" />
+				</LinearLayout>
+				
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/relativelayout1"
+				android:padding="10dp">
+				<TextView 
+					android:id="@+id/title"
+					android:textSize="18.0sp" 
+					android:textStyle="bold"
+					android:textColor="#000000" 
+					android:gravity="center" 
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:text="OOPS MODIFIED APP DETECTED" />
+				
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="5.0dip"
+					android:id="@+id/message"
+					android:text="Do you really want to Exit ?"
+					android:layout_below="@+id/title"
+					android:textColor="#000000"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/message"
+					android:orientation="vertical"
+					android:layout_marginTop="20dp">
+
+					<Button
+						android:layout_width="match_parent"
+						android:layout_height="40.0dip"
+						android:text="Ok"
+						android:id="@+id/positiveBtn"
+						android:background="@drawable/curved_shape"
+						android:textColor="?colorPrimary"
+						android:visibility="gone"
+						android:layout_marginBottom="10dp"/>
+
+					<Button
+						android:layout_width="match_parent"
+						android:layout_height="40.0dip"
+						android:text="Ok"
+						android:id="@+id/negativeBtn"
+						android:background="@drawable/curved_shape"
+						android:textColor="?colorPrimary"
+						android:visibility="gone"
+						android:layout_marginBottom="10dp"/>
+
+					<Button
+						android:layout_width="match_parent"
+						android:layout_height="40.0dip"
+						android:text="Ok"
+						android:id="@+id/neutralBtn"
+						android:background="@drawable/curved_shape"
+						android:textColor="?colorPrimary"
+						android:visibility="gone"/>
+
+				</LinearLayout>
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</android.support.v7.widget.CardView>
+
+</RelativeLayout>
+

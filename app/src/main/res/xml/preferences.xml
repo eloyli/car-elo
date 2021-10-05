@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:key="ssh_setting" android:title="SSH Settings">
+	 <CheckBoxPreference android:enabled="true"
+			android:title="DNS Forwarder"
+			android:selectable="true"
+			android:key="dns_forwarder_key"
+			android:summary="Using pdnsd binary to forward udp dns"
+			android:defaultValue="true" />
+		<CheckBoxPreference android:enabled="true"
+			android:title="Enable Custom DNS"
+			android:selectable="true"
+			android:key="enable_custom_dns_key"
+			android:summary="Enable custom primary and secondary dns server."
+			android:defaultValue="false" />
+		<EditTextPreference
+            android:key="custom_primary_dns"
+            android:title="Primary DNS"/>
+		<EditTextPreference
+            android:key="custom_secondary_dns"
+            android:title="Secondary DNS"/>
+		<SwitchPreference
+			android:key="data_compression"
+			android:title="Data Compression"
+			android:summary="compress and speed up data transfer for files/data that can be compressed. NOT recommended for low memory device"
+			android:defaultValue="false"/>
+		<EditTextPreference
+            android:key="ping_server"
+            android:title="Ping Server"
+			android:summary="Set ping server"
+			android:defaultValue="www.google.com"/>
+		<EditTextPreference
+            android:key="local_port"
+            android:title="Local Port"
+			android:summary="Default 1080"
+			android:defaultValue="1080"/>
+		<EditTextPreference
+            android:key="udp_port"
+            android:title="UDP Port"
+			android:summary="Default 7300"
+			android:defaultValue="7300"/>
+		
+		
+	</PreferenceCategory>
+	<PreferenceCategory android:key="system_setting" android:title="System Settings">
+		<SwitchPreference
+			android:key="show_notification"
+			android:title="Show Notification"
+			android:defaultValue="true"/>
+		<SwitchPreference
+			android:key="sound_notification"
+			android:title="Sound Notification"
+			android:defaultValue="true"/>
+		<SwitchPreference
+			android:key="vibrate_notification"
+			android:title="Vibrate Notification"
+			android:defaultValue="true"/>
+		<Preference android:key="apps_filter"
+			android:summary="Choose apps through proxy"
+			android:title="Apps Filter" />
+		<Preference android:key="buffer_size"
+			android:title="BufferSize" />
+		<ListPreference 
+			android:entries="@array/tls_version_min_override_array" 
+			android:title="Minimum TLS version" 
+			android:key="tls_version_min_override" 
+			android:defaultValue="default"
+			android:summary="Select the minimum SSL/TLS version for communication with the VPN Server." 
+			android:entryValues="@array/tls_version_min_override_values" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Other Settings">
+		
+		<CheckBoxPreference
+			android:title="Auto Logs"
+			android:selectable="true"
+			android:key="auto_logs_key"
+			android:summary="Enable auto open logs window"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:title="Auto Clear Logs"
+			android:selectable="true"
+			android:key="auto_clear_logs_key"
+			android:summary="Enable auto clear logs window"
+			android:defaultValue="true" />
+		<EditTextPreference
+			android:password="true"
+            android:key="custom_update_url"
+            android:summary="Set Custom Config Update"
+			android:title="Update Config URL" />
+	</PreferenceCategory>
+</PreferenceScreen>
+

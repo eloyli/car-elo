@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ScrollView
+		xmlns:ads="http://schemas.android.com/apk/res-auto"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:fillViewport="true">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_margin="10.0dip">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent">
+
+					<RadioGroup
+						android:orientation="horizontal"
+						android:id="@+id/radio1"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+
+						<RadioButton
+							android:id="@+id/radioMerger"
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content"
+							android:checked="true"
+							android:text="MERGER"
+							android:layout_weight="1.0"/>
+
+						<RadioButton
+							android:id="@+id/radioSplit"
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content"
+							android:text="SPLIT"
+							android:layout_weight="1.0"/>
+
+					</RadioGroup>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+
+						<CheckBox
+							android:id="@+id/rotationMethodCheckbox"
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content"
+							android:text="Rotation"
+							android:layout_weight="1.0"/>
+
+						<CheckBox
+							android:enabled="false"
+							android:id="@+id/splitNoDelayCheckbox"
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content"
+							android:text="Split No Delay"
+							android:layout_weight="1.0"/>
+
+					</LinearLayout>
+
+					<EditText
+						android:id="@+id/editTextInjectUrl"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:hint="URL Host"
+						android:inputType="textUri"/>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:textAppearance="?android:textAppearanceSmall"
+							android:textSize="12.0sp"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="7.0dip"
+							android:text="Request Method"
+							android:layout_weight="1.0"/>
+
+						<TextView
+							android:textAppearance="?android:textAppearanceSmall"
+							android:textSize="12.0sp"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="7.0dip"
+							android:text="Injection Method"
+							android:layout_weight="1.0"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+
+						<Spinner
+							android:entries="@array/request_methods_arrays"
+							android:id="@+id/spinnerRequestMethod"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1.0"
+							android:layout_below="@+id/tvRequestMethod"/>
+
+						<Spinner
+							android:entries="@array/inject_methods_arrays"
+							android:id="@+id/spinnerInjectMethod"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:hint="Injection Method"
+							android:layout_weight="1.0"
+							android:layout_below="@+id/tvInjectMethod"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="horizontal"
+						android:id="@+id/queryMethodLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="10.0dip"
+						android:layout_below="@+id/tvQueryMethod">
+
+						<CheckBox
+							android:layout_gravity="start"
+							android:id="@+id/checkBoxFrontQuery"
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content"
+							android:text="Front Query"
+							android:layout_weight="1.0"/>
+
+						<CheckBox
+							android:layout_gravity="end"
+							android:id="@+id/checkBoxBackQuery"
+							android:layout_width="0.0dip"
+							android:layout_height="wrap_content"
+							android:text="Back Query"
+							android:layout_weight="1.0"/>
+
+					</LinearLayout>
+
+					<RelativeLayout
+						android:orientation="horizontal"
+						android:id="@+id/controlMenuLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/tvExtra">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:id="@+id/controlMenuLayoutRow1"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<CheckBox
+								android:layout_gravity="start"
+								android:id="@+id/checkBoxOnlineHost"
+								android:layout_width="0.0dip"
+								android:layout_height="wrap_content"
+								android:text="X-Online-Host"
+								android:layout_weight="1.0"/>
+
+							<CheckBox
+								android:layout_gravity="end"
+								android:id="@+id/checkBoxForwardHost"
+								android:layout_width="0.0dip"
+								android:layout_height="wrap_content"
+								android:text="X-Forward-Host"
+								android:layout_weight="1.0"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:id="@+id/controlMenuLayoutRow2"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/controlMenuLayoutRow1">
+
+							<CheckBox
+								android:layout_gravity="start"
+								android:id="@+id/checkBoxForwardedFor"
+								android:layout_width="0.0dip"
+								android:layout_height="wrap_content"
+								android:text="X-Forwarded-For"
+								android:layout_weight="1.0"/>
+
+							<CheckBox
+								android:layout_gravity="end"
+								android:id="@+id/checkBoxKeepAlive"
+								android:layout_width="0.0dip"
+								android:layout_height="wrap_content"
+								android:text="Keep Alive"
+								android:layout_weight="1.0"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:id="@+id/controlMenuLayoutRow3"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/controlMenuLayoutRow2">
+
+							<CheckBox
+								android:layout_gravity="start"
+								android:id="@+id/checkBoxUserAgent"
+								android:layout_width="0.0dip"
+								android:layout_height="wrap_content"
+								android:text="User Agent"
+								android:layout_weight="1.0"/>
+
+						</LinearLayout>
+
+					</RelativeLayout>
+
+					<TextView
+						android:textSize="12.0sp"
+						android:id="@+id/tvPayloadSetting"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="7.0dip"
+						android:text="Payload"
+						android:layout_below="@+id/controlMenuLayout"/>
+
+					<RelativeLayout
+						android:orientation="horizontal"
+						android:id="@+id/payloadMenuLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/tvPayloadSetting">
+
+						<LinearLayout
+							android:orientation="horizontal"
+							android:id="@+id/payloadMenuLayoutRow1"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<CheckBox
+								android:layout_gravity="start"
+								android:id="@+id/checkBoxRealRequest"
+								android:layout_width="0.0dip"
+								android:layout_height="wrap_content"
+								android:text="Real Request"
+								android:layout_weight="1.0"/>
+
+							<CheckBox
+								android:layout_gravity="end"
+								android:id="@+id/checkBoxDualConnect"
+								android:layout_width="0.0dip"
+								android:layout_height="wrap_content"
+								android:text="Dual Connect"
+								android:layout_weight="1.0"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:orientation="vertical"
+							android:id="@+id/payloadMenuLayoutRow2"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/payloadMenuLayoutRow1">
+
+							<TextView
+								android:textAppearance="?android:textAppearanceMedium"
+								android:textSize="12.0sp"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="7.0dip"
+								android:layout_marginTop="10.0dip"
+								android:text="User Agent"/>
+
+							<Spinner
+								android:entries="@array/userAgent"
+								android:id="@+id/spinner2"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+					</RelativeLayout>
+
+					<Button
+						android:textColor="#ffffffff"
+						android:id="@+id/buttonGenerate"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="7.0dip"
+						android:text="GENERATE"
+						android:layout_below="@+id/payloadMenuLayout"
+						android:onClick="generate"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+
+
+
